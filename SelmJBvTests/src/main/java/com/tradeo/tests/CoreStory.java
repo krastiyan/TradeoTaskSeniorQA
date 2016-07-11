@@ -143,7 +143,8 @@ public abstract class CoreStory extends JUnitStory {
 
 	@BeforeClass
 	public static void createAndStartService() {
-		System.setProperty("webdriver.chrome.driver", "C:/selenium/chromedriver.exe");// "C:/projects/TradeoTestsTask/TradeoTaskSeniorQA/SelmJBvTests/src/resources/chromedriver.exe");//"/TradeoSeleniumJBehaveTests/src/resources/chromedriver.exe");
+		// TODO: Implement using relative path to ChromeDriver executable!
+		System.setProperty("webdriver.chrome.driver", "C:/selenium/chromedriver.exe");
 
 		service = new ChromeDriverService.Builder()
 				// .usingChromeDriverExecutable(new
